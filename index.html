@@ -1,0 +1,235 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="prism-atom-dark.css"
+      type="text/css"
+      media="screen"
+    />
+
+    <script type="text/javascript" src="prism.js"></script>
+    <script type="text/javascript" src="prism.ruby.js"></script>
+
+
+  <title>Joshua Martin</title>
+  <meta name="description" content="Joshua Martin is a professional
+      software engineer specializing in full-stack development.
+      He has extensive experience with Ruby, Rails, JavaScript,
+      and building web applications.">
+  </head>
+
+  <body>
+    <div class="about-container">
+      <ul>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+    <li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+    <li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
+    <li><a href=http://www.joshuamart.in/blog class="nav-link">Blog</a></li>
+    <li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+  </ul>
+
+     <div class="about" id="about">
+      <img src="me.jpg" class="me" />
+      <h1>Joshua Martin</h1>
+      <h2>Sr. Application Developer</h2>
+      <hr class="grey"/>
+      <p class="bio">
+        Joshua Martin is a Comm Team Member for SPOT Factory at Nationwide.
+        Previously I was in HR at Nationwide where I hired IT associates.
+        After being a Senior Recruiter for 5 years, I decided to make the jump
+        into Development and build out a skillset that would help me grow into
+        an Application developer.
+      </p>
+      </div>
+    </div>
+
+<!------ Testing below
+    <h5> Photography Work </h5>
+<div class="insta">
+    <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/4dd621cc313b5133afcf5dbbe4e05a05.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+</div>
+-->
+
+    <h3 id="code-samples">Code Snippets</h3>
+
+    <hr class="yellow">
+
+    <div class="box">
+      <h4> Temperature Conversion </h4>
+      <p>
+        This ruby program will prompt the user for a temperature
+    in degrees Celsius and let the user know what the
+    corresponding temperature is in Fahrenheit.
+      </p>
+    </div>
+
+    <div class="box">
+      <pre><code class="language-ruby">
+puts &quot;Enter degrees in Celcius:&quot;
+celsius = gets.chomp.to_i
+
+def celsius_to_fahrenheit(celsius)
+  celsius * 1.8 + 32
+end
+
+def weather(fahrenheit)
+  if fahrenheit &lt;= 75
+    return &quot;Pack heavy&quot;
+  elsif (75..85).include? fahrenheit
+    return &quot;Bring Boardshorts&quot;
+  elsif (85..95).include? fahrenheit
+    return &quot;i'd pack sunscreen&quot;
+  elsif fahrenheit &gt; 95
+    return &quot;Welp, You'll end up torched like that Drogon scene from GoT&quot;
+     end
+end
+puts &quot;Thats #{celsius_to_fahrenheit(celsius)} in Fahrenheit, #{weather(celsius_to_fahrenheit(celsius))}&quot;
+      </pre></code>
+    </div>
+
+    <br class="clear" />
+
+    <hr class="yellow">
+
+    <div class="box">
+      <pre><code class="language-ruby">
+      def kid_eat(food)
+      vegetables = [&quot;Lettuce&quot;, &quot;Broccoli&quot;, &quot;Carrot&quot;, &quot;Onion&quot;]
+      fruits = [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Mango&quot;, &quot;Pineapple&quot;]
+      if vegetables.include?(food)
+        4.times do
+          puts &quot;Gross, I hate #{food}&quot;
+        end
+      elsif fruits.include?(food)
+        puts &quot;How about we a make a smoothie with #{food}&quot;
+      else
+        puts &quot;Om nom nom... I love #{food}&quot;
+      end
+    end
+
+    foods = [&quot;Candy&quot;, &quot;Soda&quot;, &quot;Lettuce&quot;, &quot;McDonalds&quot;, &quot;KFC&quot;, &quot;Mango&quot;, &quot;Carrot&quot;]
+
+    foods.each do |food|
+      kid_eat(food)
+    end
+
+    puts &quot;Enter a food to feed me:&quot;
+    user_food = gets.chomp
+    kid_eat(user_food)
+      </pre></code>
+    </div>
+
+    <div class="box">
+      <h4>Picky Eater Challenge</h4>
+        <p>
+    This ruby program sets variables, performs arithmetic operations,
+    creates a meth and calls that method. It conditionally takes action,
+    keeps data in an array, and repeats the same code block. All to let you know,
+    if your child is a picky eater.
+    </div>
+
+    <br class="clear" />
+
+<h3 id="web-apps">Web Apps</h3>
+<hr class="yellow" />
+
+<div class="box">
+    <h4>Quote Generator</h4>
+    <img src="splurty.png" class="full-width" />
+    <p>
+      A database-powered quote generator with a mobile-first
+      design, using the Ruby on Rails framework, HTML, and CSS.
+      Uses Git and GitHub for version control, and launched
+      on Heroku.
+    </p>
+  </div>
+
+  <div class="box">
+    <h4>Yelp Clone</h4>
+    <img src="nomster.png" class="full-width" />
+    <p>
+      A Yelp clone that integrates with the Google Maps API
+      and includes features like user comments, star ratings,
+      image uploading, and user authentication.
+    </p>
+  </div>
+  <br class="clear" />
+
+  <div class="box">
+    <h4>Two-Sided Market Place</h4>
+    <img src="flixter.png" class="full-width" />
+    <p>
+      A two-sided, video-streaming marketplace platform that
+      features credit card payment capabilities, user role
+      management, complex user interfaces, and advanced
+      database relationships.
+    </p>
+  </div>
+  <div class="box">
+    <h4>Test Driven Development</h4>
+    <img src="grammable.png" class="full-width" />
+    <p>
+      An Instagram clone that was built using industry-standard, test-driven
+      development following numerous red/green/refactor cycles.
+    </p>
+  </div>
+  <br class="clear" />
+  <div class="box">
+    <h4>Single Page Todo Application</h4>
+    <img src="todoster.png" class="full-width" />
+    <p>
+      This single-page to-do application features a
+      fluid user interface that– by using JavaScript–
+      allows users to rapidly add dynamic content.
+    </p>
+  </div>
+  <div class="box">
+    <h4>Agile Team Project</h4>
+    <img src="chess.png" class="full-width" />
+    <p>
+      Worked on an Agile software development team building
+      a chess application. Under the guidance of a senior software engineer,
+      we had weekly Agile team meetings for code reviews, sprint planning,
+      and feature assignments.
+    </p>
+  </div>
+  <br class="clear" />
+  <h3 id="skills-and-tools"> Skills &amp; Tools</h3>
+  <hr class="yellow" />
+  <p class="skills-and-tools">
+    Josh has developed proficiency and expertise
+    in the following programming languages and
+    comfort with the following tools.
+  </p>
+<div class="icons">
+  <img src="github.png" class="icon" />
+  <img src="rubocop.png" class="icon" />
+  <img src="trello.png" class="icon" />
+  <img src="slack.png" class="icon" />
+  <img src="codeship.png" class="icon" />
+
+  <br class="clear" />
+  <img src="skills.png" class="icon"/>
+</div>
+
+<div class="contact-me" id="hire-me">
+  <h3 class="contact-headline">Contact</h3>
+  <hr class="yellow" />
+  <p class="contact-info">
+    Currently entertaining new opportunities.
+    Please get in touch via email:
+  </p>
+
+  <p>
+    <a href="mailto:joshua.d.martin@gmail.com" class="contact-link">
+      My Email!
+    </a>
+  </p>
+</div>
+
+  </body>
+
+</html>
